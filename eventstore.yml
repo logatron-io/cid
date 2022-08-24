@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+
+  eventstore:
+    image: local/eventstore
+    hostname: eventstore
+    build:
+      context: ./backend/eventstore
+    env_file:
+      - ./backend/eventstore/.env
+#    ports:
+#      - "2112:2112"
+#      - "2113:2113"
+#      - "1113:1113"
+#      - "1112:1112"

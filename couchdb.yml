@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+
+  couchdb:
+    image: couchdb
+    hostname: couchdb
+    env_file:
+      - ./backend/couchdb/.env  
+#    ports:
+#      - "5984:5984"
